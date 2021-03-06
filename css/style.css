@@ -23,7 +23,7 @@ body{
 .go-top{
     position: fixed;
     bottom: 100px;
-    right: 0;
+    right: -100%;/*-100% Para que se nos oculte*/
     width: 50px;
     height: 50px;
     border: 2px solid var(--red);
@@ -180,6 +180,9 @@ body{
         transition: 0.5s;
 }
 
+.img-header .welcome>button:hover{
+    background: var(--blue);
+}
 /*Acerca de*/
 .acerca-de{
     width: 100%;
@@ -581,6 +584,16 @@ body{
            font-size: 28px;
            cursor: pointer;
        }
+
+       .btn-menu>.fa-bars:hover{
+           color: var(--red);
+    
+       }
+
+       .btn-menu>.fa-times{
+           color: var(--red);
+       }
+
 
     /*Quitamos el menú para que se nos pueda mostrar la hamburguesa xd*/
     .menu .list-container{
