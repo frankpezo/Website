@@ -76,21 +76,23 @@ window.onscroll=()=>{
         goTop.style.right="0"
         goTop.style.transition="0.5s";
      }
+     
+//5. Para el botón de ver abajo y el botón que indica ir arriba
+goTop.addEventListener('click', ()=>{
+    //document.body.scrollTop=0;
+    document.documentElement.scrollTop=0;
+    
+  
+  });
 
 }     
 
 
-//5. Para el botón de ver abajo y el botón que indica ir arriba
-goTop.addEventListener('click', ()=>{
-    //document.body.scrollTop=0;
-  document.documentElement.scrollTop=0;
-  
 
-});
-
+//5.1.
 let verAbajo=document.querySelector('#abajo');
  
 verAbajo.addEventListener('click', ()=>{
-    document.body.scrollTop=600;
+   // document.body.scrollTop=600;
     document.documentElement.scrollTop=600;
 });

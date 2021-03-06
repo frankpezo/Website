@@ -51,7 +51,25 @@ body{
     color: var(--black);
 }
 
+/*Skew*/
+.skew-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vh;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
 
+.skew-arriba{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width:10vh 100vh 0 0;
+    border-style: solid;
+    border-color:  #fff transparent transparent transparent;
+    z-index:10;
+}
 
 /*Menú navegación*/
 /*Header*/
@@ -449,13 +467,14 @@ body{
 
         .footer .footer-content{
             width: 90%;
-            padding-top:50px;
+            padding-top:63px;
             margin: auto;
 
         }
 
         .footer .footer-content .footer-title{
                width: 50%;
+        
                margin: auto;
                border: 2px solid #fff;
                padding: 15px;
@@ -637,3 +656,91 @@ body{
         color: var(--red);
     }
   }
+
+  /*Para responsive celular*/
+@media only screen and (max-width: 773px){
+    /*img-header*/
+    .img-header .welcome{
+        font-size: 40px;
+
+    }
+
+    .img-header .welcome >button{
+        width: 130px;
+        font-size: 20px;
+    }
+
+    /*Acerca de nosotros*/
+    .acerca-de .info-container .about-gallery{
+         flex-direction: column;
+
+    }
+
+    .acerca-de .info-container .about-gallery img{
+        width: 100%;
+    }
+
+    /*Nuestros proyectos*/
+    .our-project .container-project .project-img img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:590px){
+    /*img header*/
+    .img-header .welcome h1{
+        font-size: 30px;
+
+    }
+    .img-header .welcome hr{
+        width: 100%px;
+    }
+    .img-header .welcome p{
+        font-size: 17px;
+
+    }
+    .img-header .welcome > button{
+        width: 100px;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    /*Testimonios*/
+    .testimonios .box-testimonios .card-testimonio .card-img img{
+       width: 200px;
+       height: 200px;
+    }
+    .testimonios .box-testimonios .card-testimonio{
+        width: 100%;
+    }
+    .testimonios .box-testimonios .card-testimonio .testimonio-text h4{
+         font-size: 25px;
+    }
+    .testimonios .box-testimonios .card-testimonio .testimonio-text p{
+        font-size: 17px;
+        line-height: 35px;
+
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+       /*Footer*/
+       .footer .formulario-content{
+           width: 95%;
+           padding: 20px;
+
+       }
+
+       .footer .formulario-content #formulario input{
+           width: 100%;
+       }
+
+       .footer .formulario-content #formulario textarea{
+             width: 100%;
+       }
+
+
+}
